@@ -25,13 +25,34 @@ def convertnumber(input):
            output = 'I'*input
        elif input == key:
            output = value
+       elif input > 5:
+            output = value + 'I'*(input-5)
+       else:
+           "not handled"
 
 
     return input, output
 
 
+results = convertnumber(1)
+print(f'input: {results[0]} and output: {results[1]}')
+results = convertnumber(2)
+print(f'input: {results[0]} and output: {results[1]}')
+results = convertnumber(3)
+print(f'input: {results[0]} and output: {results[1]}')
 results = convertnumber(4)
 print(f'input: {results[0]} and output: {results[1]}')
+results = convertnumber(5)
+print(f'input: {results[0]} and output: {results[1]}')
+results = convertnumber(6)
+print(f'input: {results[0]} and output: {results[1]}')
+results = convertnumber(7)
+print(f'input: {results[0]} and output: {results[1]}')
+results = convertnumber(8)
+print(f'input: {results[0]} and output: {results[1]}')
+results = convertnumber(9)
+print(f'input: {results[0]} and output: {results[1]}')
+
 
 
 
