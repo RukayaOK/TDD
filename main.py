@@ -15,15 +15,23 @@ keys = {
 
 def convertnumber2(input):
    output = ""
+
    for key, value in keys.items():
+
+    while len(output) == 0:
        if input == key - 1:
-           print('I' + value)
+           output = 'I' + value
+           print(output)
        elif input < 5:
-           print('I'*input)
+           output = 'I'*input
+           print(output)
+       elif input == key:
+           output = value
+           print(output)
 
 
 
-convertnumber2(1)
+convertnumber2(5)
 
 def convertnumber(input):
     if input in [1,2,3,4]:
