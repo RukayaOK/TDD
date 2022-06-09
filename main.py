@@ -13,7 +13,7 @@ keys = {
     10: 'X'
 }
 
-def convertnumber2(input):
+def convertnumber(input):
    output = ""
 
    for key, value in keys.items():
@@ -21,35 +21,17 @@ def convertnumber2(input):
     while len(output) == 0:
        if input == key - 1:
            output = 'I' + value
-           print(output)
        elif input < 5:
            output = 'I'*input
-           print(output)
        elif input == key:
            output = value
-           print(output)
 
 
+    return input, output
 
-convertnumber2(5)
 
-def convertnumber(input):
-    if input in [1,2,3,4]:
-        return 'I'*input
-    if 5 < input < 10:
-        return 'V' + (input - 5)*'I'
-    elif input == 5:
-        return 'V'
-    elif input == 10:
-        return 'X'
-    elif input == 50:
-        return 'L'
-    elif input == 100:
-        return 'C'
-    elif input == 500:
-        return 'D'
-    elif input == 1000:
-        return 'M'
+results = convertnumber(4)
+print(f'input: {results[0]} and output: {results[1]}')
 
 
 
