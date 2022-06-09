@@ -10,8 +10,8 @@ def print_hi(name):
 
 
 def convertnumber(input):
-    if input == 1:
-        return 'I'
+    if input in range(1, 5):
+        return ''.join([char*len(input) for char in input])
     elif input == 5:
         return 'V'
     elif input == 10:
