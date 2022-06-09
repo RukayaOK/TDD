@@ -10,7 +10,9 @@ def print_hi(name):
 
 keys = {
     5: 'V',
-    10: 'X'
+    10: 'X',
+    15: 'XV',
+    20: 'XX'
 }
 
 def convertnumber(input):
@@ -25,8 +27,10 @@ def convertnumber(input):
            output = 'I'*input
        elif input in range(5, 10):
             output = value + 'I'*(input-5)
-       elif input in range(10, 13):
+       elif input in range(10, 15):
            output = value + 'I'*(input-10)
+       elif input in range(16, 20):
+           output = value + 'I'*(input-15)
        else:
            "not handled"
 
@@ -57,9 +61,24 @@ results = convertnumber(11)
 print(f'input: {results[0]} and output: {results[1]}')
 results = convertnumber(12)
 print(f'input: {results[0]} and output: {results[1]}')
-
-
-
+results = convertnumber(12)
+print(f'input: {results[0]} and output: {results[1]}')
+results = convertnumber(13)
+print(f'input: {results[0]} and output: {results[1]}')
+results = convertnumber(14)
+print(f'input: {results[0]} and output: {results[1]}')
+results = convertnumber(15)
+print(f'input: {results[0]} and output: {results[1]}')
+results = convertnumber(16)
+print(f'input: {results[0]} and output: {results[1]}')
+results = convertnumber(17)
+print(f'input: {results[0]} and output: {results[1]}')
+results = convertnumber(18)
+print(f'input: {results[0]} and output: {results[1]}')
+results = convertnumber(19)
+print(f'input: {results[0]} and output: {results[1]}')
+results = convertnumber(20)
+print(f'input: {results[0]} and output: {results[1]}')
 
 
 # Press the green button in the gutter to run the script.
