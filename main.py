@@ -25,8 +25,8 @@ def convertnumber(input):
            output = 'I'*input
        elif input in range(5, 10):
             output = value + 'I'*(input-5)
-       elif input(10, 13):
-           output = value + 'I'*(input-10)'
+       elif input in range(10, 13):
+           output = value + 'I'*(input-10)
        else:
            "not handled"
 
@@ -55,6 +55,9 @@ results = convertnumber(10)
 print(f'input: {results[0]} and output: {results[1]}')
 results = convertnumber(11)
 print(f'input: {results[0]} and output: {results[1]}')
+results = convertnumber(12)
+print(f'input: {results[0]} and output: {results[1]}')
+
 
 
 
