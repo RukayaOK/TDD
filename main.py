@@ -9,8 +9,28 @@ def print_hi(name):
     print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
 
 
+def convertnumber(input):
+    if input == 1:
+        return 'I'
+    elif input == 5:
+        return 'V'
+    elif input == 10:
+        return 'X'
+    elif input == 50:
+        return 'L'
+    elif input == 100:
+        return 'C'
+    elif input == 500:
+        return 'D'
+    elif input == 1000:
+        return 'M'
+
+
+
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    output = convertnumber(1)
+    print(output)
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
