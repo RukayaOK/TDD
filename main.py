@@ -17,21 +17,18 @@ def convertnumber(input):
    output = ""
 
    for key, value in keys.items():
-
-    while len(output) == 0:
-       if input == key - 1:
+       if input == key:
+           output = value
+       elif input == key - 1:
            output = 'I' + value
        elif input < 5:
            output = 'I'*input
-       elif input == key:
-           output = value
        elif input > 5:
             output = value + 'I'*(input-5)
        else:
            "not handled"
 
-
-    return input, output
+   return input, output
 
 
 results = convertnumber(1)
@@ -52,7 +49,10 @@ results = convertnumber(8)
 print(f'input: {results[0]} and output: {results[1]}')
 results = convertnumber(9)
 print(f'input: {results[0]} and output: {results[1]}')
-
+results = convertnumber(10)
+print(f'input: {results[0]} and output: {results[1]}')
+results = convertnumber(11)
+print(f'input: {results[0]} and output: {results[1]}')
 
 
 
