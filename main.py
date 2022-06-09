@@ -21,10 +21,12 @@ def convertnumber(input):
            output = value
        elif input == key - 1:
            output = 'I' + value
-       elif input < 5:
+       elif input in range(1, 5):
            output = 'I'*input
-       elif input > 5:
+       elif input in range(5, 10):
             output = value + 'I'*(input-5)
+       elif input(10, 13):
+           output = value + 'I'*(input-10)'
        else:
            "not handled"
 
